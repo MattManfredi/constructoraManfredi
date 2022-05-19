@@ -168,6 +168,12 @@ div .box-contador{
     justify-content: space-around;
     color: #1A3C40;
     border-radius: 5%;
+    transition: 0.2s;    
+}
+
+div .box-contador:hover{
+    background-color: #1A3C40;
+    color: #F5F5F5;
 }
 
 div div .bi-bookmark-check-fill{
