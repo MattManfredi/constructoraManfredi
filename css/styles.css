@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
@@ -12,7 +12,20 @@
 
 body{
     background-color: #52616B;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%2344535c' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%2344535c' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+p{
+    margin: 0;
+}
+
+ol, ul {
+    padding-left: 0;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 /* ESTILOS INDEX */
 
@@ -26,15 +39,16 @@ header .box-menu{
     padding-bottom: 0.5rem;
 }
 
-nav .box-social-media{
+div .box-social-media{
     display: flex;
     justify-content: space-between;
     padding: 0.2rem;
     width: 100%;
     background-color: #52616B;
+    height: 2rem;
     
 }
-nav .box-social-media a{
+div .box-social-media a{
     text-transform: uppercase;
     text-decoration: none;
     color: #1E2022;
@@ -42,15 +56,15 @@ nav .box-social-media a{
     font-weight: 700;
 }
 
-nav .box-social-media a:hover .bi-instagram{
+div .box-social-media a:hover .bi-instagram{
     color: #E1306C;
 }
 
-nav .box-social-media a:hover .bi-facebook{
+div .box-social-media a:hover .bi-facebook{
     color: #0C58CA;
 }
 
-nav div .subbox-social-media{
+div div .subbox-social-media{
     display: flex;
     justify-content: space-around;
     width: 30%;
@@ -61,7 +75,7 @@ nav div .subbox-social-media{
 
 }
 
-nav .box-navegacion{
+div .box-navegacion{
     display: flex;
     padding-top: 0.63rem;
     width: 95%;
@@ -70,31 +84,47 @@ nav .box-navegacion{
     align-items: center;
 }
 
-nav .bi-list{
+div .bi-list{
     display: none;
 }
 
-nav ul div .logo{
+div div .logo{
     width: 7.5rem;
     border-radius: 6.25rem;
     border: 0.2rem solid #1E2022;
 }
 
-nav ul .navegacion{
-    display: flex;
-    min-width: 40%;
-    justify-content: space-between;
+
+div  .navegacion{
+    border-bottom: 1px solid black;
 }
-nav ul div li a{
+
+
+.navbar-brand{
     color: #1A3C40;
     font-weight: 700;
     font-size: 1.2rem;
     text-transform: uppercase;
-    padding: 0 0.2rem 0 0.2rem;
     transition: 0.3s;
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
 }
 
-nav ul div li a:hover{
+.navbar-brand:hover{
+    background-color: #1A3C40;
+    border-radius: 0.2rem;
+    color: #F5F5F5;
+}
+
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #1A3C40;
+    text-transform: uppercase;
+    transition: 0.3s;
+    
+}
+
+.navbar-nav .nav-link.active:hover{
     background-color: #1A3C40;
     border-radius: 0.2rem;
     color: #F5F5F5;
@@ -158,8 +188,8 @@ main .contadores{
 
 
 div .box-contador{
-    height: 12.5rem;
-    width: 12.5rem;
+    height: 13rem;
+    width: 13rem;
     background-color: #F5F5F5;
     border: 2px solid black;
     display: flex;
@@ -168,12 +198,7 @@ div .box-contador{
     justify-content: space-around;
     color: #1A3C40;
     border-radius: 5%;
-    transition: 0.2s;    
-}
-
-div .box-contador:hover{
-    background-color: #1A3C40;
-    color: #F5F5F5;
+    line-height: 1;
 }
 
 div div .bi-bookmark-check-fill{
@@ -442,16 +467,16 @@ main .box-form{
 @media  screen and (max-width:600px) {
 
     /* Header General */
-    nav .box-social-media{
+    div .box-social-media{
         display: none;
     }
 
-    nav ul .navegacion{
+    div ul .navegacion{
         display: none;
     }
     
     /* Icono menu */
-    nav .bi-list{
+    div .bi-list{
         display: block;
         font-size: 4rem;
     }
@@ -607,16 +632,16 @@ main .box-form{
 @media only screen and (max-width: 1024px) and (min-width: 601px) {
 
     /* Header General */
-    nav .box-social-media{
+    div .box-social-media{
         display: none;
     }
 
-    nav ul .navegacion{
+    div ul .navegacion{
         display: none;
     }
     
     /* Icono menu */
-    nav .bi-list{
+    div .bi-list{
         display: block;
         font-size: 5rem;
     }
