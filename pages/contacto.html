@@ -102,35 +102,45 @@
                 </div>
             </div>
         </div>
-        <form class="box-form">
-            <fieldset>
-                <legend>Envia tus datos </legend>
-                <div>
-                    <label for="nombre">Completa tu nombre:</label>
-                    <input type="text" name="nombre" placeholder="Ingresa tu nombre">
-                </div>
-                <div>
-                    <label for="email">Completa tu mail:</label>
-                    <input type="email" name="email" placeholder="Ingresa tu mail">
-                </div>
-                <div>
-                    <label for="phone">Ingrese un numero de telefono: 11-</label>
-                    <input type="tel" name="telefono" placeholder="Ingresa tu telefono">
-                </div>
-                <div>
-                    <label for="pais">Seleccione su pais:</label>
-                    <select name="pais">
-                        <option value="">Argentina</option>
-                        <option value="">Colombia</option>
-                        <option value="">Uruguay</option>
-                    </select>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Resetear">
-                </div>
-            </fieldset>
-        </form>
+
+
+        <form class="row g-3 box-form">
+            <div class="col-md-6">
+                <label for="inputAddress" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+              </div>
+            <div class="col-md-6">
+                <label for="inputAddress" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="email@gmail.com">
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Telefono</label>
+              <input type="tel" class="form-control" id="inputPhone" placeholder="+ 54 9 11 12345678">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Direccion</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Direccion">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Provincia</label>
+              <input type="text" class="form-control" id="inputProvincia" placeholder="Provincia">
+            </div>
+            <div class="col-md-4">
+                <label for="inputCity" class="form-label">Localidad</label>
+                <input type="text" class="form-control" id="inputLocalidad" placeholder="Localidad">
+              </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Codigo Postal</label>
+              <input type="text" class="form-control" id="inputCp" placeholder="C.P">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn botonEnviar">Enviar</button>
+            </div>
+          </form>
 
     </main>
     <footer>

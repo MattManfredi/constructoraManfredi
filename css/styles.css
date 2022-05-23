@@ -99,6 +99,9 @@ div  .navegacion{
     border-bottom: 1px solid black;
 }
 
+.navbar-toggler{
+    border: none;
+}
 
 .navbar-brand{
     color: #1A3C40;
@@ -417,7 +420,8 @@ main div div div .imagen-proyecto{
 main .box-datos{
     display: flex;
     justify-content: center;
-    margin: 10vh 0;
+    align-items: center;
+    margin: 5rem;
 }
 
 main div .box-datos-flex{
@@ -455,6 +459,18 @@ main .box-form{
     padding: 2rem;
     border: 1px solid #F5F5F5;
     border-radius: 0 4.4rem 0 4.4rem;
+}
+
+.botonEnviar{
+    background-color: #417D7A;
+    color: #F5F5F5;
+    font-weight: bold;
+}
+
+.botonEnviar:hover{
+    background-color: #1A3C40;
+    border-color: #1A3C40;
+    color: #ffffff;
 }
 
 
@@ -624,6 +640,23 @@ main .box-form{
         border-radius: 1rem;
     }
 
+    /* CONTACTO */
+
+    main .box-datos{
+        justify-content: flex-start;
+    }
+
+    main div .box-datos-flex{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+    }
+   
+    main div div .box-contacto-datos{
+        margin: 0;
+    }
+    
+
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -781,6 +814,31 @@ main .box-form{
         height: 90%;
     }
 
+    /* CONTACTO */
+
+
+    main .box-datos{
+        height: 10rem;
+    }
+    main div .box-datos-flex{
+        align-items: unset;
+    }
+   
+    main div div .box-contacto-datos{
+        width: 100%;
+        margin: 3rem;
+    }
+
+    
+
+    .col-md-2 {
+        flex: 0 0 auto;
+        width: 30%;
+    }
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
 
 
 }
