@@ -1,0 +1,337 @@
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERYS */
+@mixin titulosMq{
+    font-size:2.8rem;
+    text-underline-offset: 0.1rem;
+}
+@mixin titulosMqTablets{
+    font-size:3.2rem;
+    text-underline-offset: 0.1rem;
+}
+
+ /* ////////////////// Celulares ////////////////// */
+@media  screen and (max-width:600px) {
+   
+    /* HEADERS */
+    header{
+        .box-menu{
+            .box-social-media{
+                display: none;
+            }
+        }
+    }
+    /* TITULOS */
+    main{
+        .box-title-general{
+            .title-general{
+                width: 100%;
+                .titulo{
+                   @include titulosMq();
+                }
+                .box-quienesSomos{
+                    width: 90%;
+                    .quienesSomos{
+                        font-size: 1.6rem;
+                    }
+                    .parrafo-titulo{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .box-title-general-pages{
+            justify-content: center;
+            text-align: center;
+            padding: 0;
+            .titulo{
+                @include titulosMq();
+            }
+        }
+    }
+
+    /* FOOTERS */
+    footer{
+        .box-copyright{
+            .copyright{
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                align-items: center;
+                font-size: 0.7rem;
+                font-weight: 500;
+                li{
+                    padding: 0.2rem;
+                }
+            }
+        }
+    }
+
+    /* INDEX */
+
+    main{
+        .contadores{
+            display: flex;
+            height: 110vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .box-mapa{
+            .mapa{
+                width: 90%;
+                height: 50vh;
+                margin-bottom: 3rem;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+
+    /* HISTORIA */
+    main{
+        .box-historia{
+            margin-top: 100px;
+            display: grid;
+            min-height: 70vh;
+            width: 95vw;
+            grid-template-areas: "box-parrafo-uno  box-parrafo-uno"
+                                 "box-parrafo-dos box-parrafo-dos"
+                                 "box-imagen-historia box-imagen-historia";
+            grid-template-columns: 0.8fr 1.5fr;
+            grid-template-rows: 0.8fr 0.1fr;
+            margin-right: auto;
+            margin-left: auto;
+            .box-parrafo-uno{
+                align-items: center;
+                border-top: 3px solid #1E2022;
+                border-right: 3px solid #1E2022;
+                border-left: 3px solid #1E2022;
+                h2{
+                    margin-bottom: 1rem;
+                    font-size: 1.9rem;
+                 }
+            }
+            .box-imagen-historia{
+                margin: 1rem 0;
+             }
+             .box-parrafo-dos{
+                grid-area: box-parrafo-dos;
+                align-items: center;
+                width: 100%;
+                border-radius: 0 0 0.3rem 0.3rem;
+                border-bottom: 3px solid #1E2022;
+                border-right: 3px solid #1E2022;
+                border-left: 3px solid #1E2022;
+            }
+        }
+    }
+
+    /* QUE HACEMOS y PROYECTOS */
+    main{
+        .box-flex-colu-centr{
+            .sub-titulo{
+                text-align: center;
+            }
+            .box-parrafo-subtitulo{
+                text-align: justify;
+            }
+            .como-construimos-video{
+                /* video que hacemos */
+                width: 95vw;
+                height: 15rem;
+            }
+            .box-proyectos{
+                width: 90%;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 0.8rem;
+                .box-imagen-proyectos{
+                    background-color: transparent;
+                    border: none;
+                    .imagen-proyecto{
+                        border: 0.2rem solid #1E2022 ;
+                        border-radius: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* CONTACTO */
+    main{
+        .box-datos{
+            justify-content: flex-start;
+            .box-datos-flex{
+                flex-direction: column;
+                align-items: flex-start;
+                width: 50%;
+                .box-contacto-datos{
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+}
+/* ////////////////// Tablets ////////////////// */
+@media only screen and (max-width: 1024px) and (min-width: 601px) {
+    /* HEADERS */
+    header{
+        .box-menu{
+            .box-social-media{
+                display: none;
+            }
+        }
+    }
+    /* TITULOS */
+    main{
+        .box-title-general{
+            height: 50rem;
+            .title-general{
+                width: 100%;
+                .titulo{
+                    @include titulosMqTablets();
+                }
+            }
+        }
+        .box-title-general-pages{
+            .titulo{
+                @include titulosMqTablets();
+            }
+            justify-content: center;
+            height: 30rem;
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    /* INDEX */
+    main{
+        .box-title-general{
+            .title-general{
+                .box-quienesSomos{
+                    width: 90%;
+                    .quienesSomos{
+                        font-size: 2.5rem;
+                    }
+                    .parrafo-titulo{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+        .contadores{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            margin: 5% 50%;
+            column-gap: 5rem;
+            row-gap: 3rem;
+        }
+        .box-mapa{
+            .mapa{
+                width: 90%;
+                margin-bottom: 3rem;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+
+    /* HISTORIA */
+    main{
+        .box-historia{
+            margin-top: 100px;
+            display: grid;
+            min-height: 70vh;
+            width: 95vw;
+            grid-template-areas: "box-parrafo-uno  box-parrafo-uno"
+                                 "box-parrafo-dos box-parrafo-dos"
+                                 "box-imagen-historia box-imagen-historia";
+            grid-template-columns: 0.8fr 1.5fr;
+            grid-template-rows: 0.8fr 0.1fr;
+            margin-right: auto;
+            margin-left: auto;
+            .box-parrafo-uno{
+                align-items: center;
+                border-top: 3px solid #1E2022;
+                border-right: 3px solid #1E2022;
+                border-left: 3px solid #1E2022;
+                h2{
+                    margin-bottom: 1rem;
+                    font-size: 1.9rem;  
+                }
+            }
+            .box-imagen-historia{
+                margin: 1rem 0;
+                .box-imagen{
+                    width: 100%;
+                }
+            }
+            .box-parrafo-dos{
+                grid-area: box-parrafo-dos;
+                align-items: center;
+                width: 100%;
+                border-radius: 0 0 0.3rem 0.3rem;
+                border-bottom: 3px solid #1E2022;
+                border-right: 3px solid #1E2022;
+                border-left: 3px solid #1E2022;
+            }
+        }
+    }
+    /* QUE HACEMOS y PROYECTOS */
+    main{
+        .box-flex-colu-centr{
+            .sub-titulo{
+                text-align: center;
+            }
+            .box-parrafo-subtitulo{
+                text-align: justify;
+            }
+            .como-construimos-video{
+                /* video que hacemos */
+                width: 90vw;
+                height: 25rem;
+            }
+            .box-proyectos{
+                width: 80vw;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows:repeat(12,10fr) ;
+                gap: 0;
+                .box-imagen-proyectos{
+                    background-color: transparent;
+                    border: none;
+                    height: 100%;
+                    .imagen-proyecto{
+                        border: 0.2rem solid #1E2022 ;
+                        border-radius: 1rem;
+                        height: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* CONTACTO */
+    main{
+        .box-datos{
+            height: 10rem;
+            .box-datos-flex{
+                align-items: unset;
+                .box-contacto-datos{
+                    width: 100%;
+                    margin: 3rem;
+                }
+            }
+        }
+        form{
+            .col-md-2 {
+                flex: 0 0 auto;
+                width: 30%;
+            }
+            .col-md-4 {
+                flex: 0 0 auto;
+                width: 50%;
+            }
+        }
+    }
+}

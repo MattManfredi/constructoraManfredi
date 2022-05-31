@@ -1,0 +1,49 @@
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* HISTORIA */
+
+main{
+    .box-historia{
+        margin-top: 100px;
+        display: grid;
+        min-height: 70vh;
+        width: 95vw;
+        grid-template-areas: "box-parrafo-uno box-imagen-historia box-imagen-historia"
+                            "box-parrafo-dos box-parrafo-dos box-parrafo-dos";
+        grid-template-columns: 0.8fr 1.5fr;
+        grid-template-rows: 0.8fr 0.1fr;
+        margin-right: auto;
+        margin-left: auto;
+        .box-parrafo-uno{
+            grid-area: box-parrafo-uno;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: justify;
+            color: $blanco-principal;
+            background-color: #52616B;
+            padding: 0.4rem;
+            border-radius: 0.3rem 0.3rem 0px 0px;
+        }
+        .box-imagen-historia{
+            grid-area: box-imagen-historia;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .box-imagen{
+                width: 85%;
+                height: 95%;
+                background-color: #52616B;
+                border: 1px solid #000000;
+            }
+        }
+        .box-parrafo-dos{
+            grid-area: box-parrafo-dos;
+            text-align: justify;
+            color: $blanco-principal;
+            width: 95%;
+            background-color: #52616B;
+            padding: 0.4rem;
+            border-radius: 0 0.3rem 0.3rem 0.3rem;
+        }
+    }
+}

@@ -1,0 +1,558 @@
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* RESET */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif; }
+
+body {
+  background-color: #52616B;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%2344535c' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E"); }
+
+p {
+  margin: 0; }
+
+ol, ul {
+  padding-left: 0; }
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* HEADER */
+header .box-menu {
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.5rem; }
+  header .box-menu .box-social-media {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+    width: 100%;
+    background-color: #52616B;
+    height: 2rem; }
+    header .box-menu .box-social-media a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #1E2022;
+      font-size: 1rem;
+      font-weight: 700; }
+    header .box-menu .box-social-media a:hover .bi-instagram {
+      color: #E1306C; }
+    header .box-menu .box-social-media a:hover .bi-facebook {
+      color: #0C58CA; }
+    header .box-menu .box-social-media .subbox-social-media {
+      display: flex;
+      justify-content: space-around;
+      width: 30%;
+      list-style-type: none;
+      color: #1E2022;
+      font-size: 0.8rem;
+      font-weight: 700; }
+  header .box-menu .box-navegacion {
+    display: flex;
+    padding-top: 0.63rem;
+    width: 95%;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center; }
+    header .box-menu .box-navegacion a .logo {
+      width: 7.5rem;
+      border-radius: 6.25rem;
+      border: 0.2rem solid #1E2022; }
+    header .box-menu .box-navegacion .navegacion {
+      border-bottom: 1px solid black; }
+      header .box-menu .box-navegacion .navegacion .navbar-toggler {
+        border: none; }
+      header .box-menu .box-navegacion .navegacion .navbar-brand {
+        color: #4e3b31;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        transition: 0.3s;
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x); }
+      header .box-menu .box-navegacion .navegacion .navbar-brand:hover {
+        background-color: #4e3b31;
+        border-radius: 0.2rem;
+        color: #F5F5F5; }
+      header .box-menu .box-navegacion .navegacion .navbar-nav .nav-link.active, header .box-menu .box-navegacion .navegacion .navbar-nav .show > .nav-link {
+        color: #4e3b31;
+        text-transform: uppercase;
+        transition: 0.3s; }
+      header .box-menu .box-navegacion .navegacion .navbar-nav .nav-link.active:hover {
+        background-color: #4e3b31;
+        border-radius: 0.2rem;
+        color: #F5F5F5; }
+
+/* Titulo con fondo de imagen index y pages */
+main .box-title-general {
+  /* Index */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/71ff8217edc4c9112d972e0524625f67.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6.25rem; }
+  main .box-title-general .title-general {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #F5F5F5; }
+    main .box-title-general .title-general .box-quienesSomos {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      main .box-title-general .title-general .box-quienesSomos .quienesSomos {
+        margin-bottom: 1.88rem;
+        font-size: 2.4rem; }
+      main .box-title-general .title-general .box-quienesSomos .parrafo-titulo {
+        font-size: 1.2rem; }
+    main .box-title-general .title-general .titulo {
+      font-size: 4.38rem;
+      text-transform: uppercase;
+      color: #F5F5F5;
+      text-decoration: underline 0.2rem;
+      text-underline-offset: 0.4rem; }
+
+main .box-title-general-pages {
+  /* Pages */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/71ff8217edc4c9112d972e0524625f67.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 100px 20px; }
+  main .box-title-general-pages .titulo {
+    font-size: 4.38rem;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    text-decoration: underline 0.2rem;
+    text-underline-offset: 0.4rem; }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* FOOTER */
+footer {
+  /* Redes sociales */
+  /* Copyright */ }
+  footer .box-menu-footer {
+    background-color: #F5F5F5;
+    padding: 0.5rem 0 0.8rem 0; }
+    footer .box-menu-footer .redes-sociales-footer {
+      display: flex;
+      list-style: none;
+      justify-content: center; }
+      footer .box-menu-footer .redes-sociales-footer li {
+        transition: 0.4s;
+        margin: 0 1.2rem 0 1.2rem; }
+      footer .box-menu-footer .redes-sociales-footer li:hover {
+        transform: scale(1.5); }
+      footer .box-menu-footer .redes-sociales-footer li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #4e3b31;
+        font-size: 2rem;
+        transition: 0.4s; }
+      footer .box-menu-footer .redes-sociales-footer a:hover .bi-instagram {
+        color: #E1306C; }
+      footer .box-menu-footer .redes-sociales-footer a:hover .bi-facebook {
+        color: #0C58CA; }
+      footer .box-menu-footer .redes-sociales-footer a:hover .bi-whatsapp {
+        color: #25d366; }
+      footer .box-menu-footer .redes-sociales-footer a:hover .bi-envelope-fill {
+        color: #FF8D29; }
+  footer .box-copyright {
+    background-color: #c4c4c4; }
+    footer .box-copyright .copyright {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      font-weight: 700; }
+      footer .box-copyright .copyright li {
+        padding: 0.8rem; }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* INDEX */
+main .contadores {
+  display: flex;
+  margin: 3.13rem 0 3.13rem 0;
+  justify-content: space-around; }
+  main .contadores .box-contador {
+    height: 13rem;
+    width: 13rem;
+    background-color: #F5F5F5;
+    border: 2px solid #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #1A3C40;
+    border-radius: 5%;
+    line-height: 1; }
+    main .contadores .box-contador .bi-bookmark-check-fill {
+      color: #417D7A;
+      font-size: 3rem; }
+    main .contadores .box-contador .contador-numero {
+      font-size: 4.47rem; }
+
+main .box-mapa {
+  display: flex;
+  justify-content: center; }
+  main .box-mapa .mapa {
+    width: 90%;
+    height: 70vh;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem; }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* HISTORIA */
+main .box-historia {
+  margin-top: 100px;
+  display: grid;
+  min-height: 70vh;
+  width: 95vw;
+  grid-template-areas: "box-parrafo-uno box-imagen-historia box-imagen-historia" "box-parrafo-dos box-parrafo-dos box-parrafo-dos";
+  grid-template-columns: 0.8fr 1.5fr;
+  grid-template-rows: 0.8fr 0.1fr;
+  margin-right: auto;
+  margin-left: auto; }
+  main .box-historia .box-parrafo-uno {
+    grid-area: box-parrafo-uno;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    color: #F5F5F5;
+    background-color: #52616B;
+    padding: 0.4rem;
+    border-radius: 0.3rem 0.3rem 0px 0px; }
+  main .box-historia .box-imagen-historia {
+    grid-area: box-imagen-historia;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    main .box-historia .box-imagen-historia .box-imagen {
+      width: 85%;
+      height: 95%;
+      background-color: #52616B;
+      border: 1px solid #000000; }
+  main .box-historia .box-parrafo-dos {
+    grid-area: box-parrafo-dos;
+    text-align: justify;
+    color: #F5F5F5;
+    width: 95%;
+    background-color: #52616B;
+    padding: 0.4rem;
+    border-radius: 0 0.3rem 0.3rem 0.3rem; }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* QUE HACEMOS */
+main .box-flex-colu-centr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6.25rem 0 6.25rem 0;
+  color: #F5F5F5; }
+  main .box-flex-colu-centr .sub-titulo {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 50px; }
+  main .box-flex-colu-centr .box-parrafo-subtitulo {
+    width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 4.5rem; }
+  main .box-flex-colu-centr .como-construimos-video {
+    width: 70vw;
+    height: 60vh; }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* PROYECTOS */
+main .box-flex-colu-centr .box-proyectos {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px; }
+  main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos {
+    background-color: #4e3b31;
+    border: 1px solid black;
+    height: 25vh; }
+    main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos .imagen-proyecto {
+      width: 100%;
+      height: 100%; }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* CONTACTO */
+main .box-datos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem; }
+  main .box-datos .box-datos-flex {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center; }
+    main .box-datos .box-datos-flex .box-contacto-datos {
+      width: 20vw;
+      height: 10vh;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 5vh 5vw;
+      color: #F5F5F5;
+      font-weight: 700;
+      font-size: 20px; }
+      main .box-datos .box-datos-flex .box-contacto-datos .data-icons {
+        font-size: 2.5rem;
+        margin-right: 2rem;
+        color: #F5F5F5; }
+
+main .box-form {
+  width: 80%;
+  margin: 0 auto 6.25rem auto;
+  background-color: #1E2022;
+  color: #F5F5F5;
+  padding: 2rem;
+  border: 1px solid #F5F5F5;
+  border-radius: 0 4.4rem 0 4.4rem; }
+  main .box-form .botonEnviar {
+    background-color: #4e3b31;
+    color: #F5F5F5;
+    font-weight: bold;
+    text-transform: uppercase; }
+  main .box-form .botonEnviar:hover {
+    background-color: #4e2511;
+    border-color: #2e221c; }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERYS */
+/* ////////////////// Celulares ////////////////// */
+@media screen and (max-width: 600px) {
+  /* HEADERS */
+  header .box-menu .box-social-media {
+    display: none; }
+  /* TITULOS */
+  main .box-title-general .title-general {
+    width: 100%; }
+    main .box-title-general .title-general .titulo {
+      font-size: 2.8rem;
+      text-underline-offset: 0.1rem; }
+    main .box-title-general .title-general .box-quienesSomos {
+      width: 90%; }
+      main .box-title-general .title-general .box-quienesSomos .quienesSomos {
+        font-size: 1.6rem; }
+      main .box-title-general .title-general .box-quienesSomos .parrafo-titulo {
+        font-size: 1rem; }
+  main .box-title-general-pages {
+    justify-content: center;
+    text-align: center;
+    padding: 0; }
+    main .box-title-general-pages .titulo {
+      font-size: 2.8rem;
+      text-underline-offset: 0.1rem; }
+  /* FOOTERS */
+  footer .box-copyright .copyright {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 500; }
+    footer .box-copyright .copyright li {
+      padding: 0.2rem; }
+  /* INDEX */
+  main .contadores {
+    display: flex;
+    height: 110vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+  main .box-mapa .mapa {
+    width: 90%;
+    height: 50vh;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem; }
+  /* HISTORIA */
+  main .box-historia {
+    margin-top: 100px;
+    display: grid;
+    min-height: 70vh;
+    width: 95vw;
+    grid-template-areas: "box-parrafo-uno  box-parrafo-uno" "box-parrafo-dos box-parrafo-dos" "box-imagen-historia box-imagen-historia";
+    grid-template-columns: 0.8fr 1.5fr;
+    grid-template-rows: 0.8fr 0.1fr;
+    margin-right: auto;
+    margin-left: auto; }
+    main .box-historia .box-parrafo-uno {
+      align-items: center;
+      border-top: 3px solid #1E2022;
+      border-right: 3px solid #1E2022;
+      border-left: 3px solid #1E2022; }
+      main .box-historia .box-parrafo-uno h2 {
+        margin-bottom: 1rem;
+        font-size: 1.9rem; }
+    main .box-historia .box-imagen-historia {
+      margin: 1rem 0; }
+    main .box-historia .box-parrafo-dos {
+      grid-area: box-parrafo-dos;
+      align-items: center;
+      width: 100%;
+      border-radius: 0 0 0.3rem 0.3rem;
+      border-bottom: 3px solid #1E2022;
+      border-right: 3px solid #1E2022;
+      border-left: 3px solid #1E2022; }
+  /* QUE HACEMOS y PROYECTOS */
+  main .box-flex-colu-centr .sub-titulo {
+    text-align: center; }
+  main .box-flex-colu-centr .box-parrafo-subtitulo {
+    text-align: justify; }
+  main .box-flex-colu-centr .como-construimos-video {
+    /* video que hacemos */
+    width: 95vw;
+    height: 15rem; }
+  main .box-flex-colu-centr .box-proyectos {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.8rem; }
+    main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos {
+      background-color: transparent;
+      border: none; }
+      main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos .imagen-proyecto {
+        border: 0.2rem solid #1E2022;
+        border-radius: 1rem; }
+  /* CONTACTO */
+  main .box-datos {
+    justify-content: flex-start; }
+    main .box-datos .box-datos-flex {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 50%; }
+      main .box-datos .box-datos-flex .box-contacto-datos {
+        margin: 0; } }
+
+/* ////////////////// Tablets ////////////////// */
+@media only screen and (max-width: 1024px) and (min-width: 601px) {
+  /* HEADERS */
+  header .box-menu .box-social-media {
+    display: none; }
+  /* TITULOS */
+  main .box-title-general {
+    height: 50rem; }
+    main .box-title-general .title-general {
+      width: 100%; }
+      main .box-title-general .title-general .titulo {
+        font-size: 3.2rem;
+        text-underline-offset: 0.1rem; }
+  main .box-title-general-pages {
+    justify-content: center;
+    height: 30rem;
+    padding: 0;
+    text-align: center; }
+    main .box-title-general-pages .titulo {
+      font-size: 3.2rem;
+      text-underline-offset: 0.1rem; }
+  /* INDEX */
+  main .box-title-general .title-general .box-quienesSomos {
+    width: 90%; }
+    main .box-title-general .title-general .box-quienesSomos .quienesSomos {
+      font-size: 2.5rem; }
+    main .box-title-general .title-general .box-quienesSomos .parrafo-titulo {
+      font-size: 1.8rem; }
+  main .contadores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 5% 50%;
+    column-gap: 5rem;
+    row-gap: 3rem; }
+  main .box-mapa .mapa {
+    width: 90%;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem; }
+  /* HISTORIA */
+  main .box-historia {
+    margin-top: 100px;
+    display: grid;
+    min-height: 70vh;
+    width: 95vw;
+    grid-template-areas: "box-parrafo-uno  box-parrafo-uno" "box-parrafo-dos box-parrafo-dos" "box-imagen-historia box-imagen-historia";
+    grid-template-columns: 0.8fr 1.5fr;
+    grid-template-rows: 0.8fr 0.1fr;
+    margin-right: auto;
+    margin-left: auto; }
+    main .box-historia .box-parrafo-uno {
+      align-items: center;
+      border-top: 3px solid #1E2022;
+      border-right: 3px solid #1E2022;
+      border-left: 3px solid #1E2022; }
+      main .box-historia .box-parrafo-uno h2 {
+        margin-bottom: 1rem;
+        font-size: 1.9rem; }
+    main .box-historia .box-imagen-historia {
+      margin: 1rem 0; }
+      main .box-historia .box-imagen-historia .box-imagen {
+        width: 100%; }
+    main .box-historia .box-parrafo-dos {
+      grid-area: box-parrafo-dos;
+      align-items: center;
+      width: 100%;
+      border-radius: 0 0 0.3rem 0.3rem;
+      border-bottom: 3px solid #1E2022;
+      border-right: 3px solid #1E2022;
+      border-left: 3px solid #1E2022; }
+  /* QUE HACEMOS y PROYECTOS */
+  main .box-flex-colu-centr .sub-titulo {
+    text-align: center; }
+  main .box-flex-colu-centr .box-parrafo-subtitulo {
+    text-align: justify; }
+  main .box-flex-colu-centr .como-construimos-video {
+    /* video que hacemos */
+    width: 90vw;
+    height: 25rem; }
+  main .box-flex-colu-centr .box-proyectos {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 10fr);
+    gap: 0; }
+    main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos {
+      background-color: transparent;
+      border: none;
+      height: 100%; }
+      main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos .imagen-proyecto {
+        border: 0.2rem solid #1E2022;
+        border-radius: 1rem;
+        height: 90%; }
+  /* CONTACTO */
+  main .box-datos {
+    height: 10rem; }
+    main .box-datos .box-datos-flex {
+      align-items: unset; }
+      main .box-datos .box-datos-flex .box-contacto-datos {
+        width: 100%;
+        margin: 3rem; }
+  main form .col-md-2 {
+    flex: 0 0 auto;
+    width: 30%; }
+  main form .col-md-4 {
+    flex: 0 0 auto;
+    width: 50%; } }

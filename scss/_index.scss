@@ -1,0 +1,40 @@
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* INDEX */
+main{
+    .contadores{
+        display: flex;
+        margin: 3.13rem 0 3.13rem 0;
+        justify-content: space-around;
+        .box-contador{
+            height: 13rem;
+            width: 13rem;
+            background-color: $blanco-principal;
+            border: 2px solid #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            color: #1A3C40;
+            border-radius: 5%;
+            line-height: 1;
+            .bi-bookmark-check-fill{
+                color: #417D7A;
+                font-size: 3rem;
+            }
+            .contador-numero{
+                font-size: 4.47rem;
+            }
+        }
+    }
+    .box-mapa{
+        display: flex;
+        justify-content: center;
+        .mapa{
+            width: 90%;
+            height: 70vh;
+            margin-bottom: 3rem;
+            border-radius: 0.5rem;
+        }
+    }
+    
+}

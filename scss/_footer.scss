@@ -1,0 +1,55 @@
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* FOOTER */
+
+footer{
+    /* Redes sociales */
+    .box-menu-footer{
+        background-color: $blanco-principal;
+        padding: 0.5rem 0 0.8rem 0;
+        .redes-sociales-footer{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            li{
+                transition: 0.4s;
+                margin: 0 1.2rem 0 1.2rem;
+            }
+            li:hover{
+                transform: scale(1.5);
+            }
+            li a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $color-verde-principal;
+                font-size: 2rem;
+                transition: 0.4s;
+            }
+            a:hover .bi-instagram{
+                color: $color-instagram;
+            }
+            a:hover .bi-facebook{
+                color: $color-facebook;
+            }
+            a:hover .bi-whatsapp{
+                color: $color-whatsapp;
+            }
+            a:hover .bi-envelope-fill{
+                color: $color-mail;
+            }
+        }
+    }
+    /* Copyright */
+    .box-copyright{
+        background-color: #c4c4c4;
+        .copyright{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            font-weight: 700;
+            li{
+                padding: 0.8rem;
+            }
+        }
+    }
+}

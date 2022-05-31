@@ -1,0 +1,23 @@
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* PROYECTOS */
+
+main{
+    .box-flex-colu-centr{
+        .box-proyectos{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 2px;
+            .box-imagen-proyectos{
+                background-color: $color-verde-principal;
+                border: 1px solid black;
+                height: 25vh;
+                .imagen-proyecto{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

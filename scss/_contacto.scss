@@ -1,0 +1,52 @@
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* CONTACTO */
+
+main{
+    .box-datos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem;
+        .box-datos-flex{
+            display: flex;
+            width: 90%;
+            align-items: center;
+            justify-content: center;
+            .box-contacto-datos{
+                width: 20vw;
+                height: 10vh;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 5vh 5vw;
+                color: $blanco-principal;
+                font-weight: 700;
+                font-size: 20px;
+                .data-icons{
+                    font-size: 2.5rem;
+                    margin-right: 2rem;
+                    color: #F5F5F5;
+                }
+            }
+        }
+    }
+    .box-form{
+        width: 80%;
+        margin: 0 auto 6.25rem auto;
+        background-color: #1E2022;
+        color: $blanco-principal;
+        padding: 2rem;
+        border: 1px solid $blanco-principal;
+        border-radius: 0 4.4rem 0 4.4rem;
+        .botonEnviar{
+            background-color: $color-verde-principal;
+            color: $blanco-principal;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .botonEnviar:hover{
+            background-color: #4e2511;
+            border-color: #2e221c;
+        }
+    }
+}
