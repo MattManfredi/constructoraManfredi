@@ -7,6 +7,12 @@
     text-decoration: underline 0.2rem;
     text-underline-offset: 0.4rem;
 }
+%imagen-fondo-principal{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/71ff8217edc4c9112d972e0524625f67.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
 
 header{
     .box-menu{
@@ -97,10 +103,7 @@ header{
 main{
     .box-title-general{
         /* Index */
-        background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/71ff8217edc4c9112d972e0524625f67.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-y: center;
+        @extend %imagen-fondo-principal;
         height: 70vh;
         display: flex;
         justify-content: center;
@@ -135,10 +138,7 @@ main{
     
     .box-title-general-pages{
         /* Pages */
-        background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/71ff8217edc4c9112d972e0524625f67.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-y: center;
+        @extend %imagen-fondo-principal;
         height: 50vh;
         display: flex;
         justify-content: flex-start;
