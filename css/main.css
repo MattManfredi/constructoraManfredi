@@ -23,6 +23,12 @@ dl, ol, ul {
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* HEADER */
+main .box-title-general, main .box-title-general-pages {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/71ff8217edc4c9112d972e0524625f67.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center; }
+
 header .box-menu {
   background-color: #F5F5F5;
   display: flex;
@@ -93,10 +99,6 @@ header .box-menu {
 /* Titulo con fondo de imagen index y pages */
 main .box-title-general {
   /* Index */
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/71ff8217edc4c9112d972e0524625f67.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
   height: 70vh;
   display: flex;
   justify-content: center;
@@ -129,10 +131,6 @@ main .box-title-general {
 
 main .box-title-general-pages {
   /* Pages */
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/71ff8217edc4c9112d972e0524625f67.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
   height: 50vh;
   display: flex;
   justify-content: flex-start;
@@ -293,10 +291,15 @@ main .box-flex-colu-centr .box-proyectos {
   main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos {
     background-color: #4e3b31;
     border: 1px solid black;
-    height: 25vh; }
+    height: 25vh;
+    transition: 0.3s; }
     main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos .imagen-proyecto {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      transition: 0.3s; }
+  main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos:hover {
+    box-shadow: 0 0 1rem #4f9;
+    border: 1px solid #4f9; }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* CONTACTO */
@@ -439,6 +442,12 @@ main .box-form {
       main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos .imagen-proyecto {
         border: 0.2rem solid #1E2022;
         border-radius: 1rem; }
+      main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos .imagen-proyecto:hover {
+        box-shadow: 0 0 1rem #4f9;
+        border: 0.1rem solid #4f9; }
+    main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos:hover {
+      box-shadow: none;
+      border: none; }
   /* CONTACTO */
   main .box-datos {
     justify-content: flex-start; }
@@ -542,6 +551,12 @@ main .box-form {
         border: 0.2rem solid #1E2022;
         border-radius: 1rem;
         height: 90%; }
+      main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos .imagen-proyecto:hover {
+        box-shadow: 0 0 1rem #4f9;
+        border: 0.1rem solid #4f9; }
+    main .box-flex-colu-centr .box-proyectos .box-imagen-proyectos:hover {
+      box-shadow: none;
+      border: none; }
   /* CONTACTO */
   main .box-datos {
     height: 10rem; }

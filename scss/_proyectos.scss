@@ -13,10 +13,16 @@ main{
                 background-color: $color-verde-principal;
                 border: 1px solid black;
                 height: 25vh;
+                transition: 0.3s;
                 .imagen-proyecto{
                     width: 100%;
                     height: 100%;
+                    transition: 0.3s;
                 }
+            }
+            .box-imagen-proyectos:hover{
+                box-shadow: 0 0 1rem #4f9;
+                border: 1px solid #4f9;
             }
         }
     }
